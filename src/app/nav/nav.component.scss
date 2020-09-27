@@ -1,0 +1,27 @@
+header {
+  background-image: linear-gradient(to right, #5390d9 ,#7700ff);
+  .logo {
+    font-weight: bold;
+  }
+  nav {
+    justify-self: right;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: left;
+      li {
+        a {
+          padding: 1.5em;
+          text-transform: uppercase;
+          font-size: .8em;
+          &:hover {
+            background: #8E2bFF;
+          }
+        }
+      }
+    }
+  }
+
+}

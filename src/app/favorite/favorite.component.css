@@ -1,0 +1,9 @@
+.wrapp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 400px;
+}
+.cards {
+  margin: 10px;
+}

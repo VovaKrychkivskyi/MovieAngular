@@ -1,0 +1,43 @@
+.theme-light {
+  background-color:#fff;
+  color: #222;
+}
+
+.theme-dark {
+  background-color: #222;
+  color: #fff;
+}
+.theme-switcher-wrap {
+  width: 100%;
+  text-align: right;
+}
+.theme-switcher {
+  display: inline-block;
+  cursor: pointer;
+}
+.switch-path {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+.switch-handle {
+  background-color: #999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+.switch-path:active {
+  background: #555555;
+}
+.switch-handle:active {
+  transform: translateX(20px);
+  background: #7bbb5e;
+}
+.content{
+  margin: 0;
+  padding: 0;
+
+}
+

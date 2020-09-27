@@ -1,0 +1,20 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">Movie App</a>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/favorite">Favorite</a></li>
+        <li><a routerLink="/contact">Contact us</a></li>
+        <li *ngIf="!isAuthenticated"><a routerLink="/login" (click)="logout()">
+          <mat-icon>power_settings_new</mat-icon>
+        </a></li>
+        <!--<li *ngIf="isAuthenticated"><a>-->
+<!--          <mat-icon>exit_to_app</mat-icon>-->
+<!--          Logout-->
+<!--        </a></li>-->
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--00exrRHnYPIHvLnDiQTHnIVu2cq9Ag_t4lLPYpYVDo-->

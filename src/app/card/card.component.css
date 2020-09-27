@@ -1,0 +1,33 @@
+.cards {
+  width: 450px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.cards:hover {
+  /*box-shadow: 6px 4px 25px 9px rgba(23,90,115,1);*/
+  box-shadow: 6px 4px 14px 9px rgba(61,135,184,1);
+}
+
+.image-wrapper {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 500px;
+  margin: 5px auto;
+}
+
+.text {
+  height: 60px;
+}
+
+.text:hover {
+  color: rgb(193, 128, 6);
+}

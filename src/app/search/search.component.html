@@ -1,0 +1,72 @@
+ <!--<div class="filter-wrapper">-->
+<!--  <div class="keyword-wrapper">-->
+<!--    <input-->
+<!--      [(ngModel)]="movie.title"-->
+<!--      #title="ngModel"-->
+<!--      required-->
+<!--      type="text"-->
+<!--      id="keyword"-->
+<!--      placeholder="search for movies..." autofocus/>-->
+<!--    <button (click)="search()" [disabled]="!title.valid">Search</button>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<!-- ////-->
+
+<div class="filter-wrapper">
+  <div class="keyword-wrapper">
+    <input
+      id="query"
+      type="text"
+      class="form-control"
+      required
+      [(ngModel)]="query"
+      placeholder="search for movies..." autofocus >
+<!--      (keyup.enter)="getSearchResults()"-->
+    <div *ngIf="query"></div>
+    <button (click)="getSearchResults()">Search</button>
+<!--    -->
+  </div>
+</div>
+<div class="results">
+    <app-card
+      *ngFor="let movie of movies | async"
+      [movie]="movie">
+    </app-card>
+</div>
+
+<!--&lt;!&ndash;//////&ndash;&gt;-->
+<!-- <form [formGroup]="messegeForms" (ngSubmit)="getSearchResults()">-->
+<!--   <div class="keyword-wrapper">-->
+<!--     <input id="query"-->
+<!--            type="text"-->
+<!--            class="form-control"-->
+<!--            formControlName="query">-->
+<!--     <div *ngIf="query"></div>-->
+<!--&lt;!&ndash;     <button (click)="getSearchResults()">Search</button>&ndash;&gt;-->
+<!--     <input type="submit" value="send message">-->
+<!--   </div>-->
+<!-- </form>-->
+<!--&lt;!&ndash; /////&ndash;&gt;-->
+
+
+<!--<div class="container">-->
+<!--  <div class="form-group">-->
+<!--    <input-->
+<!--      id="query"-->
+<!--      type="text"-->
+<!--      class="form-control"-->
+<!--      [(ngModel)]="query"-->
+<!--      (keyup.enter)="getSearchResults()">-->
+<!--  </div>-->
+<!--  <button type="button" (click)="getSearchResults()" class="form-control btn btn-primary">Search</button>-->
+<!--  <hr>-->
+<!--  <div class="row">-->
+<!--    <app-movie-->
+<!--      *ngFor="let movie of movies | async"-->
+<!--      [movie]="movie"-->
+<!--      class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">-->
+<!--    </app-movie>-->
+<!--  </div>-->
+<!--</div>-->
